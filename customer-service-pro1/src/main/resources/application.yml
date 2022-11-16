@@ -1,0 +1,15 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: CUSTOMER-SERVICE-PRO1
+
+eureka:
+  client:
+    register-with-client: true
+    fetch-registry: true
+    service-url:
+      default:zone: http://localhost:8761/eureka/
+    instance:
+      hostname: localhost
